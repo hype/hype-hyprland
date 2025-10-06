@@ -1,0 +1,32 @@
+# ~/.config/eza/theme.yml
+filekinds:
+  directory:   { foreground: "#00D1B2", is_bold: true }   # teal for dirs
+  symlink:     { foreground: "#FFB86C" }                  # orange for links
+  executable:  { foreground: "#50FA7B" }                  # green for execs
+  socket:      { foreground: "#BD93F9" }
+  pipe:        { foreground: "#8BE9FD" }
+  block_device:{ foreground: "#F1FA8C" }
+  char_device: { foreground: "#F1FA8C" }
+  special:     { foreground: "#FF5555" }
+  mount_point: { foreground: "#FF79C6" }
+
+users:
+  user_you:   { foreground: "#A4B1CD", is_bold: true }
+  user_root:  { foreground: "#FF5555", is_bold: true }
+  user_other: { foreground: "#6C7086" }
+  group_yours:{ foreground: "#6C7086" }
+  group_other:{ foreground: "#6C7086" }
+  group_root: { foreground: "#FF6E6E" }
+
+git:
+  new:       { foreground: "#50FA7B" }
+  modified:  { foreground: "#F1FA8C" }
+  deleted:   { foreground: "#FF5555" }
+  renamed:   { foreground: "#8BE9FD" }
+  ignored:   { foreground: "#6272A4" }
+  conflicted:{ foreground: "#FF79C6", is_bold: true }
+
+header:       { foreground: "#A4B1CD", is_bold: true }
+date:         { foreground: "#A4B1CD" }
+links:        { foreground: "#A4B1CD" }
+punctuation:  { foreground: "#6C7086" }
