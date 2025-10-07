@@ -4,37 +4,37 @@
 # filekinds, users, links, date, header, size, git, filenames, extensions, etc.
 
 filekinds:
-  directory:         { foreground: "#333333", is_bold: true }
-  symlink:           { foreground: "#333333", is_italic: true }
-  executable:        { foreground: "#333333" }
-  block_device:      { foreground: "#333333" }
-  char_device:       { foreground: "#333333" }
-  socket:            { foreground: "#333333" }
-  pipe:              { foreground: "#333333" }
-  special:           { foreground: "#333333" }   # “other_writable” look-alike
+  directory:         { foreground: "#FF3300", is_bold: true }
+  symlink:           { foreground: "#00616f", is_italic: true }
+  executable:        { foreground: "#0000FF" }
+  block_device:      { foreground: "#00FF00" }
+  char_device:       { foreground: "#000000" }
+  socket:            { foreground: "#00FFFF" }
+  pipe:              { foreground: "#FFFF00" }
+  special:           { foreground: "#FF00FF" }   # “other_writable” look-alike
 
 users:
-  user:              { foreground: "#333333" }   # uid
-  group:             { foreground: "#333333" }
+  user:              { foreground: "#000000" }   # uid
+  group:             { foreground: "#000000" }
 
 links:
-  normal:            { foreground: "#333333" }
-  broken:            { foreground: "#333333", is_bold: true }
+  normal:            { foreground: "#000000" }
+  broken:            { foreground: "#000000", is_bold: true }
 
 git:
-  new:               { foreground: "#333333" }
-  modified:          { foreground: "#333333" }
-  deleted:           { foreground: "#333333" }
-  renamed:           { foreground: "#333333" }
+  new:               { foreground: "#000000" }
+  modified:          { foreground: "#000000" }
+  deleted:           { foreground: "#000000" }
+  renamed:           { foreground: "#000000" }
 
 date:
-  modified:          { foreground: "#333333" }
+  modified:          { foreground: "#000000" }
 
 header:
-  path:              { foreground: "#333333", is_bold: true }
+  path:              { foreground: "#000000", is_bold: true }
 
 # Optional: per-extension tweaks
 extensions:
-  md:   { filename: { foreground: "#333333" } }
-  log:  { filename: { foreground: "#333333" } }
-  zip:  { filename: { foreground: "#333333" } }
+  md:   { filename: { foreground: "#000000" } }
+  log:  { filename: { foreground: "#000000" } }
+  zip:  { filename: { foreground: "#000000" } }
