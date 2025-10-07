@@ -1,32 +1,40 @@
 # ~/.config/eza/theme.yml
+
+# Colors & styles go under these sections:
+# filekinds, users, links, date, header, size, git, filenames, extensions, etc.
+
 filekinds:
-  directory:   { foreground: "#00D1B2", is_bold: true }   # teal for dirs
-  symlink:     { foreground: "#FFB86C" }                  # orange for links
-  executable:  { foreground: "#50FA7B" }                  # green for execs
-  socket:      { foreground: "#BD93F9" }
-  pipe:        { foreground: "#8BE9FD" }
-  block_device:{ foreground: "#F1FA8C" }
-  char_device: { foreground: "#F1FA8C" }
-  special:     { foreground: "#FF5555" }
-  mount_point: { foreground: "#FF79C6" }
+  directory:         { foreground: "#333333", is_bold: true }
+  symlink:           { foreground: "#333333", is_italic: true }
+  executable:        { foreground: "#333333" }
+  block_device:      { foreground: "#333333" }
+  char_device:       { foreground: "#333333" }
+  socket:            { foreground: "#333333" }
+  pipe:              { foreground: "#333333" }
+  special:           { foreground: "#333333" }   # “other_writable” look-alike
 
 users:
-  user_you:   { foreground: "#A4B1CD", is_bold: true }
-  user_root:  { foreground: "#FF5555", is_bold: true }
-  user_other: { foreground: "#6C7086" }
-  group_yours:{ foreground: "#6C7086" }
-  group_other:{ foreground: "#6C7086" }
-  group_root: { foreground: "#FF6E6E" }
+  user:              { foreground: "#333333" }   # uid
+  group:             { foreground: "#333333" }
+
+links:
+  normal:            { foreground: "#333333" }
+  broken:            { foreground: "#333333", is_bold: true }
 
 git:
-  new:       { foreground: "#50FA7B" }
-  modified:  { foreground: "#F1FA8C" }
-  deleted:   { foreground: "#FF5555" }
-  renamed:   { foreground: "#8BE9FD" }
-  ignored:   { foreground: "#6272A4" }
-  conflicted:{ foreground: "#FF79C6", is_bold: true }
+  new:               { foreground: "#333333" }
+  modified:          { foreground: "#333333" }
+  deleted:           { foreground: "#333333" }
+  renamed:           { foreground: "#333333" }
 
-header:       { foreground: "#A4B1CD", is_bold: true }
-date:         { foreground: "#A4B1CD" }
-links:        { foreground: "#A4B1CD" }
-punctuation:  { foreground: "#6C7086" }
+date:
+  modified:          { foreground: "#333333" }
+
+header:
+  path:              { foreground: "#333333", is_bold: true }
+
+# Optional: per-extension tweaks
+extensions:
+  md:   { filename: { foreground: "#333333" } }
+  log:  { filename: { foreground: "#333333" } }
+  zip:  { filename: { foreground: "#333333" } }
